@@ -21,7 +21,7 @@ let animal = {
 };
 let { age, ...rest } = animal;
 
-// let { age, ...rest } = animal || {};
+// let { age, ...rest } = animal || {}; //* for error handling
 console.log(rest);
 
 // spread operator as rest operator
