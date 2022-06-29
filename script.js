@@ -122,11 +122,11 @@ for (let number of numbers3) {
   temp.push(square);
 }
 
-console.log(temp);
+// console.log(temp);
 
 // Using map()
 const temp2 = numbers3.map((number) => number * number);
-console.log(temp2);
+// console.log(temp2);
 
 // Filter()
 
@@ -162,7 +162,7 @@ const output4 = products.filter((pd) => pd.color !== 'black');
 const numbers4 = [1, 2, 3, 4, 5];
 const result2 = numbers4.filter(function (element, index, arr) {
   // console.log(index);
-  // console.log(arr);
+  console.log(arr);
   return element > 2;
 });
 // console.log(result2);
@@ -173,6 +173,20 @@ const result2 = numbers4.filter(function (element, index, arr) {
 // শুধু মাত্র প্রথম এলিমেন্ট কে দিবে। না পাইলে আন্ডিফাইন দিবে
 
 const output5 = products.find((pd) => pd.color == 'black');
-console.log(output5);
+// console.log(output5);
 
-// LEC:একটা মজার ব্যাপার হলো ভিতরে  ভিতরে সবাই লুপ ই  চালাচ্ছে
+// INFO:একটা মজার ব্যাপার হলো ভিতরে  ভিতরে সবাই লুপ ই  চালাচ্ছে
+
+// API
+// const data = () => {
+//   fetch('https://fakestoreapi.com/products')
+//     .then((response) => response.json())
+//     .then((data) => console.log(data));
+// };
+
+// data();
+
+// ternary operator [condition ? true : false;]
+const number = 10;
+const result = number > 10 ? 'greater' : 'lesser';
+console.log(result);
