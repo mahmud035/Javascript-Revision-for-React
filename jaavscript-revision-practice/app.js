@@ -1,6 +1,7 @@
+//Filter
+
 var name = "hero alom";
 var lname = "Uganda";
-
 //আমরা  যদি  সাধারণ  ভাবে  করি  তাহলে এভাবে  করতে   পারি
 console.log("Hello " + name + " Welcome to " + lname);
 
@@ -21,7 +22,7 @@ let animal = {
 };
 let { age, ...rest } = animal;
 
-// let { age, ...rest } = animal || {}; //* for error handling
+// let { age, ...rest } = animal || {};
 console.log(rest);
 
 // spread operator as rest operator
@@ -101,7 +102,7 @@ for (let i = 0; i < friends.length; i++) {
   console.log(element);
 }
 
-// ম্যাপ কি ?  কিভাবে  কাজ করে ?
+// INFO: ম্যাপ কি ?  কিভাবে  কাজ করে ?
 
 // ১) এরেকে লুপ করে একটা একটা করে এলিমেন্টকে ধরবে
 //  ২) এরপর একটা ফাংশনকে কল করে সেই ফাংশনে এলিমেন্টগুলকে পাঠাবে।
